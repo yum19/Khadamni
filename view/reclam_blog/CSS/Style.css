@@ -1,0 +1,69 @@
+body {
+    background-color: rgba(236, 235, 234, 0.822);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.lien1 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 30px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: box-shadow 0.5s ease;
+    font-size: 1rem;
+}
+
+.lien1:hover {
+    background-color: rgb(248, 110, 110);
+    box-shadow: 0 0 0 2px white;
+    transition: all 0.5s;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: rgb(248, 110, 110);
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 150px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    width: 150px;
+}
+
+a.lien2 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.lien2:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+div.divimg {
+    margin-left: 80px;
+}

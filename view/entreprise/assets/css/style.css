@@ -1,0 +1,289 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ====== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====== Body ===== */
+body {
+    /*background: #f5f2f2;*/ /* Remove or comment out this line */
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+
+/* ====== Form container ===== */
+.form-container {
+    display: flex;
+    width: 900px;
+    height: 725px;
+    border: 3px solid #fe3f40;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+/* ====== First Column ===== */
+.col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    background: #fe3f40;
+    backdrop-filter: blur(30px);
+    border-radius: 0 30% 20% 0;
+    transition: border-radius .3s;
+}
+
+.image-layer {
+    position: relative;
+}
+
+.form-image-main {
+    width: 400px;
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+.form-image {
+    position: absolute;
+    left: 0;
+    width: 400px;
+}
+.form-image1 {
+    position: fixed; /* Positioning the image relative to the viewport */
+    top: 0; /* Positioning the image at the top of the viewport */
+    left: 0; /* Positioning the image at the left of the viewport */
+    width: 100px;
+    z-index: 999; /* Adjust z-index as needed to ensure it's above other elements */
+}
+
+
+/* ====== Form Image Animation ===== */
+.coin {
+    animation: scale-down 3s ease-in-out alternate infinite;
+}
+
+.spring {
+    animation: scale-down 3s ease-in-out alternate infinite;
+}
+
+.dots {
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+.rocket {
+    animation: up-down 3s ease-in-out alternate infinite;
+}
+
+.cloud {
+    animation: left-right 3s ease-in-out alternate infinite;
+}
+
+.stars {
+    animation: scale-down 3s ease-in-out alternate infinite;
+}
+
+@keyframes left-right {
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes up-down {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes scale-down {
+    to {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* ====== Featured Words ===== */
+.featured-words {
+    text-align: center;
+    color: #edeff0;
+    width: 500px;
+}
+
+.featured-words span {
+    font-weight: 600;
+    color: #03a4ed;
+}
+
+/* ====== Second Column ===== */
+.col-2 {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+.btn {
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #0b0b0b;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.btn-1 {
+    background: #03a4ed;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/*  ======= Login Form ========  */
+.login-form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+
+/*  ======= Register Form ========  */
+.register {
+    position: absolute;
+    left: -50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+
+.register .form-title {
+    margin-block: 40px 20px;
+}
+
+.form-title {
+    margin: 40px 0;
+    color: #fe3f40;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-inputs {
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: #fff;
+    background: #acd7f6f0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.input-field2 {
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+.input-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: #fff;
+    background: #03a4ed;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit:hover {
+    gap: 15px;
+    background-color: #fe3f40;
+}
+
+
+/* ====== Responsive ====== */
+@media (max-width: 892px) {
+    .form-container {
+        width: 400px;
+    }
+
+    .col-1 {
+        display: none;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+}
